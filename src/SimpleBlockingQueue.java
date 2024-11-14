@@ -18,7 +18,7 @@ public class SimpleBlockingQueue<T> {
         this.capacity = DEFAULT_CAPACITY;
     }
 
-    public int size() {
+    public synchronized int size() {
         return count;
     }
 
